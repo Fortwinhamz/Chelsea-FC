@@ -1,0 +1,146 @@
+@import 'config';
+
+html{
+  font-size: 62.5%;
+  
+}
+
+body{
+  color: $primarycolor;
+  padding: 0 auto;
+  background: $container-bg;
+
+  .container{
+    margin: 2rem 10rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    header{
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+
+      .design-logo{
+        font-size: 3rem;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .nav-items{
+        display: flex;
+
+        .nav-menu{
+          display: flex;
+          justify-content: space-around;
+
+          .nav-item{
+            padding: 0px 20px;
+            list-style-type: none;
+            transition: all .6s ease-in-out;
+
+            &:hover{
+              letter-spacing: 4px;
+            }
+          }
+
+          .nav-link{
+            text-decoration: none;
+            color:$primarycolor;
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+    }
+
+    .hero{
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      margin: 4rem 0;
+
+      .chels-text{
+        // background-color: $secondary-color;
+
+        .chels-heading{
+          font-size: 4rem;
+          width: 65%;
+          text-align: left;
+          color: $primarycolor
+        }
+
+        .chels-para{
+          width: 57%;
+          line-height: 1.8rem;
+          color: $primarycolor;
+          font-weight: 200;
+          font-size: 1.2rem;
+          margin: 3rem 0;
+
+          & span{
+            color: $primarycolor;
+            font-weight: 800;
+            font-size: 1.4rem;
+            transition: .6s ease-in;
+
+            &:hover{
+              word-spacing: .6rem;
+            }
+          }
+
+        }
+
+        .btn{
+          margin: 2rem 1rem;
+          padding: 1.4rem 2rem;
+          &:hover{
+            letter-spacing: .3rem;
+          }
+        }
+      }
+    }
+
+
+    .chels-vids{
+      
+
+      & img {
+        margin: 0 10px;
+      }
+    }
+
+    .hamburger{
+      display: none;
+
+      .bar{
+        display: block;
+        background-color: $primarycolor;
+          width: 25px;
+          height: 3px;
+          margin: 4px auto;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .btn{
+      padding: 10px 15px;
+      background-color: $primarycolor;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+
+      &:hover{
+        background-color: #fff;
+        color: $primarycolor;
+        border: 2px solid $primarycolor;
+      }
+    }
+}
+
+
+
+@import 'mobile';

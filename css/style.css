@@ -1,0 +1,114 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: rgba(0, 12, 120, 0.9490196078);
+  padding: 0 auto;
+  background: #cccccc;
+}
+body .container {
+  margin: 2rem 10rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body .container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .container header .design-logo {
+  font-size: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+body .container header .nav-items {
+  display: flex;
+}
+body .container header .nav-items .nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+body .container header .nav-items .nav-menu .nav-item {
+  padding: 0px 20px;
+  list-style-type: none;
+  transition: all 0.6s ease-in-out;
+}
+body .container header .nav-items .nav-menu .nav-item:hover {
+  letter-spacing: 4px;
+}
+body .container header .nav-items .nav-menu .nav-link {
+  text-decoration: none;
+  color: rgba(0, 12, 120, 0.9490196078);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .container .hero {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 0;
+}
+body .container .hero .chels-text .chels-heading {
+  font-size: 4rem;
+  width: 65%;
+  text-align: left;
+  color: rgba(0, 12, 120, 0.9490196078);
+}
+body .container .hero .chels-text .chels-para {
+  width: 57%;
+  line-height: 1.8rem;
+  color: rgba(0, 12, 120, 0.9490196078);
+  font-weight: 200;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+body .container .hero .chels-text .chels-para span {
+  color: rgba(0, 12, 120, 0.9490196078);
+  font-weight: 800;
+  font-size: 1.4rem;
+  transition: 0.6s ease-in;
+}
+body .container .hero .chels-text .chels-para span:hover {
+  word-spacing: 0.6rem;
+}
+body .container .hero .chels-text .btn {
+  margin: 2rem 1rem;
+  padding: 1.4rem 2rem;
+}
+body .container .hero .chels-text .btn:hover {
+  letter-spacing: 0.3rem;
+}
+body .container .chels-vids img {
+  margin: 0 10px;
+}
+body .container .hamburger {
+  display: none;
+}
+body .container .hamburger .bar {
+  display: block;
+  background-color: rgba(0, 12, 120, 0.9490196078);
+  width: 25px;
+  height: 3px;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+body .btn {
+  padding: 10px 15px;
+  background-color: rgba(0, 12, 120, 0.9490196078);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+body .btn:hover {
+  background-color: #fff;
+  color: rgba(0, 12, 120, 0.9490196078);
+  border: 2px solid rgba(0, 12, 120, 0.9490196078);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
